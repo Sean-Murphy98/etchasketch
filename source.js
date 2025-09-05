@@ -1,5 +1,6 @@
 function onHover(square){
     square.style.background = "black";
+    square.style.opacity = parseFloat(square.style.opacity) + 0.1;
 }
 function gridCreation(size){
     const container = document.querySelector("#container")
@@ -12,6 +13,7 @@ function gridCreation(size){
         for (let i=0; i<size; i++){
             const square = document.createElement("div");
             square.classList.add("square");
+            square.style.opacity = 0;
             square.addEventListener("mouseenter", () => {
                 onHover(square);
             })

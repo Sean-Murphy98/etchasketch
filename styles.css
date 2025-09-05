@@ -23,6 +23,7 @@ body{
     left: 50%;
     margin-left: -350px;
     margin-top: -330px;
+    border: solid black;
 }
 #button{
     width: 15%;
@@ -40,5 +41,4 @@ body{
 .square{
     height: 100%;
     width: 100%;
-    border: solid black;
 }
