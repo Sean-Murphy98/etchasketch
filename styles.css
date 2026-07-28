@@ -7,28 +7,23 @@ body{
     margin: 10px;
 }
 #content{
-
-
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;   
 }
 #container{
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
     flex-direction: column;
-    height: 700px;
-    width: 700px;
-    top: 50%;
-    left: 50%;
-    margin-left: -350px;
-    margin-top: -330px;
+    height: 80vh;
+    width: 80vh;
     border: solid black;
 }
 #button{
     width: 15%;
     display: block;
-    margin-left: 42.5%;
 }
 .row{
     display: flex;
