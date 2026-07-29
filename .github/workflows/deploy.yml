@@ -58,6 +58,7 @@ jobs:
           az container create \
             --resource-group $RESOURCE_GROUP \
             --name $CONTAINER_NAME \
+            --os-type Linux
             --image ${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:latest \
             --cpu 1 \
             --memory 1 \
