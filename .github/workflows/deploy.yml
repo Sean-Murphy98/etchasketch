@@ -62,7 +62,7 @@ jobs:
             --image ${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:latest \
             --cpu 1 \
             --memory 1 \
-            --ip-address Public \  
+            --ip-address Public \
             --dns-name-label mywebsite \
             --ports 80 \
             --registry-login-server ${{ env.ACR_NAME }}.azurecr.io \
