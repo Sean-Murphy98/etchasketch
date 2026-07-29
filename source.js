@@ -30,8 +30,9 @@ function gridDeletion(){
     }
 }
 gridCreation(16)
-button = document.querySelector("#button")
-button.addEventListener("click", () =>{
+btn = document.querySelector("#clear_grid");
+console.log(btn)
+btn.addEventListener("click", () =>{
     let userSize = prompt("Choose a new NxN grid size (max 100):");
     if (userSize>0 && userSize<=100){
         gridDeletion()
