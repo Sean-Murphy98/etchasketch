@@ -64,9 +64,7 @@ jobs:
             --memory 1 \
             --ip-address Public \  
             --dns-name-label mywebsite \
-            --ports 80
             --ports 80 \
-            --ip-address Public \
             --registry-login-server ${{ env.ACR_NAME }}.azurecr.io \
             --registry-username ${{ secrets.ACR_USERNAME }} \
             --registry-password ${{ secrets.ACR_PASSWORD }}
